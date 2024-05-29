@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Define a new category for ALMASYIA user groups -->
+        <record id="module_category_almasyia" model="ir.module.category">
+            <field name="name">ALMASYIA</field>
+            <field name="description">User groups for ALMASYIA roles</field>
+            <field name="sequence">10</field>
+        </record>
+
+        <!-- Define security groups under the new category without implied groups -->
+        <record id="group_normal" model="res.groups">
+            <field name="name">Normal User</field>
+            <field name="category_id" ref="module_category_almasyia"/>
+            <field name="implied_ids" eval="[]"/> <!-- No implied groups -->
+        </record>
+
+        <record id="group_eng" model="res.groups">
+            <field name="name">Engineering User</field>
+            <field name="category_id" ref="module_category_almasyia"/>
+            <field name="implied_ids" eval="[]"/> <!-- No implied groups -->
+        </record>
+
+        <record id="group_admin" model="res.groups">
+            <field name="name">Admin User</field>
+            <field name="category_id" ref="module_category_almasyia"/>
+            <field name="implied_ids" eval="[]"/> <!-- No implied groups -->
+        </record>
+
+        <record id="group_superadmin" model="res.groups">
+            <field name="name">Super Admin</field>
+            <field name="category_id" ref="module_category_almasyia"/>
+            <field name="implied_ids" eval="[]"/> <!-- No implied groups -->
+        </record>
+    </data>
+</odoo>

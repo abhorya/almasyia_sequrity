@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_normal_user_sale_order,access_normal_user_sale_order,model_sale_order,almasyia_user_cat.group_normal,1,0,0,0
+access_eng_user_sale_order,access_eng_user_sale_order,model_sale_order,almasyia_user_cat.group_eng,1,1,0,0
+access_admin_user_sale_order,access_admin_user_sale_order,model_sale_order,almasyia_user_cat.group_admin,1,1,1,1
+access_superadmin_user_sale_order,access_superadmin_user_sale_order,model_sale_order,almasyia_user_cat.group_superadmin,1,1,1,1
